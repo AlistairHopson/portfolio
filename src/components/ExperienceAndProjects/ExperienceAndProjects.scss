@@ -1,0 +1,144 @@
+@use "../Nav/Nav.scss" as nav-styling;
+
+.experience-intro h1 {
+  animation: slideInDown;
+  animation-duration: 0.2s;
+}
+
+h2 a {
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: nav-styling.$projects-colour;
+  text-decoration-thickness: 6px;
+}
+
+h2 a:hover {
+  text-decoration-color: nav-styling.$projects-colour-hover;
+}
+
+.course-container,
+.course-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.tile {
+  width: 90%;
+  padding: 1rem;
+}
+
+.tile.skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  width: 80%;
+  border: 4mm solid black;
+}
+
+.skill-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border: solid white;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  border-bottom-right-radius: 225px 15px;
+  border-bottom-left-radius: 15px 255px;
+  font-size: 12px;
+  animation: bounceIn;
+  animation-duration: 0.6s;
+}
+
+.skill-icon img {
+  height: 60px;
+  opacity: 0.92;
+  width: 60px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+}
+
+.title h3 {
+  margin: 0 0 0 5px;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  width: 10%;
+  position: relative;
+  margin: 0 auto;
+
+  background: white;
+}
+
+@media (min-width: 768px) {
+  .course-section {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1200px) {
+  .layout h1 {
+    font-size: 2em;
+  }
+
+  .tile {
+    width: 70%;
+  }
+
+  .tile.skills {
+    flex-direction: row;
+    width: 30%;
+  }
+  .tile.skills.fundamentals-skills {
+    width: 50%;
+  }
+}
+
+.course-section a {
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: nav-styling.$projects-colour;
+  text-decoration-thickness: 5px;
+}
+
+.course-section a:hover {
+  text-decoration-color: nav-styling.$projects-colour-hover;
+}
+
+.skills-gained {
+  border: dashed pink;
+}
+
+.fundamentals {
+  animation: fadeInLeft;
+  animation-duration: 0.5s;
+}
+
+.backend {
+  animation: fadeInLeft;
+  animation-duration: 0.6s;
+}
+
+.frontend {
+  animation: fadeInLeft;
+  animation-duration: 0.7s;
+}
+
+.project-phase {
+  animation: fadeInLeft;
+  animation-duration: 0.8s;
+}
+
+.skill-icon {
+  animation: bounceIn;
+  animation-duration: 0.6s;
+}

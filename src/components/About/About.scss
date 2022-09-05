@@ -1,0 +1,39 @@
+.text-zone {
+  font-size: x-large;
+}
+
+.text-zone h1 {
+  animation: slideInDown;
+  animation-duration: 0.35s;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.skills .tech-skills {
+  animation: slideInLeft;
+  animation-duration: 0.5s;
+}
+
+.skills .non-tech-skills {
+  animation: slideInRight;
+  animation-duration: 0.5s;
+  width: 30%;
+  border-left: 0;
+  padding-left: 0;
+}
+
+@media (min-width: 1024px) {
+  .skills {
+    flex-direction: row;
+  }
+
+  .skills .non-tech-skills {
+    width: 30%;
+    border-left: 1px solid white;
+    padding-left: 40px;
+  }
+}

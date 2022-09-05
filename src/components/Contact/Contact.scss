@@ -1,0 +1,121 @@
+@use "../Nav/Nav.scss" as nav-styling;
+
+.contact-link {
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: nav-styling.$contact-colour;
+  text-decoration-thickness: 3px;
+  border-radius: 8px;
+  padding: 1px 5px 5px;
+  transition: 0.3s;
+  &:hover {
+    text-decoration-color: nav-styling.$contact-colour-hover;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+}
+
+.contact-title {
+  animation: fadeInDown;
+  animation-duration: 0.4s;
+}
+
+.form-intro {
+  animation: fadeIn;
+  animation-duration: 1.5s;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20px;
+  font-family: "Inter", sans-serif;
+
+  label {
+    animation: fadeInLeft;
+    animation-duration: 0.8s;
+  }
+
+  input {
+    animation: fadeInLeft;
+    animation-duration: 0.8s;
+    height: 45px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    font-family: "Inter", sans-serif;
+  }
+
+  textarea {
+    height: 125px;
+    padding: 15px 0 0 20px;
+    margin-bottom: 8px;
+    font-family: "Inter", sans-serif;
+    animation: fadeInLeft;
+    animation-duration: 0.8s;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    border: 0;
+    background: nav-styling.$contact-colour;
+    height: 50px;
+    font-size: 20px;
+    color: #fff;
+    padding: 0 20px;
+    box-sizing: border-box;
+    animation: fadeInRight;
+    animation-duration: 0.8s;
+    transition: 0.3s;
+
+    &:hover {
+      background: nav-styling.$contact-colour-hover;
+      cursor: pointer;
+    }
+  }
+
+  .email-status {
+    border: 2.5px dashed green;
+  }
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  animation: fadeInUp;
+  animation-duration: 0.5s;
+
+  a {
+    margin: 5px;
+    transition: 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+span {
+  font-size: 16px;
+
+  span {
+    color: #ffd700;
+  }
+}
+
+@media (min-width: 768px) {
+  .container.contact-page {
+    width: 75%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container.contact-page {
+    width: 50%;
+  }
+}

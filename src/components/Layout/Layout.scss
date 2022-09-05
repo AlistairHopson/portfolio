@@ -1,0 +1,55 @@
+.layout {
+  display: flex;
+  justify-content: center;
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.top-tags {
+  bottom: auto;
+  top: 35px;
+}
+
+.tags {
+  color: yellow;
+  opacity: 0.6;
+  position: absolute;
+  bottom: 0;
+  left: 120px;
+  font-size: 18px;
+}
+
+.container {
+  padding: 90px 15px 0 15px;
+  width: 100%;
+  height: 70%;
+  min-height: 566px;
+  max-width: 1200px;
+  top: 5%;
+  transform-style: preserve-3d;
+  animation: fadeIn 1s forwards;
+  color: white;
+  font-size: 18px;
+}
+
+.container.home-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.next-button {
+  border: 1px solid #ccc;
+  background: rgba(0, 0, 0, 0.184);
+  text-align: center;
+  box-shadow: 0 0 15px 0px lightyellow;
+  color: white;
+  float: right;
+  border-radius: 8px;
+  padding: 10px 15px;
+  align-self: flex-end;
+}
