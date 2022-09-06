@@ -66,6 +66,11 @@ export default function Contact() {
         />
         <label>Message</label>
         <textarea name="message" placeholder="your message" required />
+        <div
+          class="g-recaptcha"
+          data-sitekey="6LeMD9chAAAAANIxy0WvoDiQ5m-Nz5e4NxpLYyac"
+        ></div>
+        <br />
         <input type="submit" value="Send" />
       </form>
       <p>
