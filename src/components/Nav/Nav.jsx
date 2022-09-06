@@ -18,6 +18,9 @@ export default function Nav() {
             <NavLink
               className={(isActive) => "home" + (!isActive ? "unselected" : "")}
               to="/"
+              onClick={() => {
+                setOpenedBurger(false);
+              }}
             >
               <h1>Alistair Hopson</h1>
               <div className="animated-line"></div>
@@ -41,6 +44,9 @@ export default function Nav() {
                 "about" + (!isActive ? "-unselected" : "")
               }
               to="/"
+              onClick={() => {
+                setOpenedBurger(false);
+              }}
             >
               <h2>About</h2>
               <div className="animated-line"></div>
@@ -50,6 +56,9 @@ export default function Nav() {
                 "experience-and-projects" + (!isActive ? "-unselected" : "")
               }
               to="/experience-and-projects"
+              onClick={() => {
+                setOpenedBurger(false);
+              }}
             >
               <h2>Experience & Projects</h2>
               <div className="animated-line"></div>
@@ -59,6 +68,9 @@ export default function Nav() {
                 "contact" + (!isActive ? "-unselected" : "")
               }
               to="/contact"
+              onClick={() => {
+                setOpenedBurger(false);
+              }}
             >
               <h2>Contact</h2>
               <div className="animated-line"></div>
