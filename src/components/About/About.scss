@@ -1,3 +1,5 @@
+@use "../Nav/Nav.scss" as nav-styling;
+
 .text-zone {
   font-size: x-large;
 }
@@ -36,4 +38,15 @@
     border-left: 1px solid white;
     padding-left: 40px;
   }
+}
+
+p a {
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: nav-styling.$home-colour;
+  text-decoration-thickness: 6px;
+}
+
+p a:hover {
+  text-decoration-color: nav-styling.$home-colour-hover;
 }

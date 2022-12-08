@@ -6,18 +6,24 @@ export default function About() {
   return (
     <div className="container home-page">
       <div className="text-zone">
-        <h1>UK-based full-stack developer.</h1>
+        <h1>UK-based full stack developer.</h1>
         <p>
-          Hi, I'm a recent coding bootcamp graduate looking for a junior
-          developer role.
+          Hi, I'm Alistair. This website gives some brief information about my
+          background.
+        </p>
+        <p>
+          {" "}
+          To see what I've been up to recently, you can visit my{" "}
+          <a href="https://github.com/AlistairHopson">GitHub</a> or{" "}
+          <a href="https://www.linkedin.com/in/alistair-hopson/">LinkedIn</a>.
         </p>
         <br />
         <div className="skills">
           <div className="tech-skills">
             <h2>Tech skills: </h2>
-            <h3>Languages: JavaScript (& TypeScript), Python</h3>
+            <h3>Languages: C#, Python, JavaScript (& TypeScript),</h3>
             <h3>Frontend: React, CSS (& SCSS), HTML</h3>
-            <h3>Backend: Node, SQL (& PSQL), Express, Axios, Firebase</h3>
+            <h3>Backend: Node, SQL (& PostgreSQL), Express, Axios, Firebase</h3>
             <h3>Other: Git & GitHub, Azure DevOps</h3>
           </div>
           <br />

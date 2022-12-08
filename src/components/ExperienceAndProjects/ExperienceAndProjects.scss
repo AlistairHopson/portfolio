@@ -5,14 +5,16 @@
   animation-duration: 0.2s;
 }
 
-h2 a {
+h2 a,
+h3 a {
   color: white;
   text-decoration: underline;
   text-decoration-color: nav-styling.$projects-colour;
   text-decoration-thickness: 6px;
 }
 
-h2 a:hover {
+h2 a:hover,
+h3 a:hover {
   text-decoration-color: nav-styling.$projects-colour-hover;
 }
 

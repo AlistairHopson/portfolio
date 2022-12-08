@@ -41,7 +41,7 @@ export default function Contact() {
   return (
     <div className="container contact-page">
       <h1 className="contact-title">CONTACT</h1>
-      <div className="form-intro">
+      <div className="form-intro text-zone">
         <p>
           If you'd like to get in touch, feel free to contact me via the contact
           form. Alternatively, you can connect with me via
